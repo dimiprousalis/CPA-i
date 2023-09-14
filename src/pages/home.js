@@ -30,9 +30,7 @@ export default function Home() {
         sendMessage(`in terms of accounting: ${inputValue}`);
         //clear out the user input to get ready for new message
         setInputValue('');
-
     }
-
 
     //get data from openAI
     const sendMessage = (message) => {
@@ -103,7 +101,7 @@ export default function Home() {
                 </div>
                 <form className="w-full flex justify-center" onSubmit={handleSubmit}>
                     <input className="w-full h-16 rounded-bl-3xl p-5" type="text" placeholder="Type your accounting question..." value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
-                    <button className="bg-secondary-300 bg-opacity-50 w-20 h-16 rounded-br-3xl hover:bg-800 text-white font-bold rounded" type="submit">Send</button>
+                    <button className="hover:bg-secondary-300 hover:bg-opacity-50 w-20 h-16 rounded-br-3xl bg-opacity-100 bg-secondary-900 text-white font-bold rounded" type="submit">Send</button>
                 </form>
             </motion.div>
         </div>
