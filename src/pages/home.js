@@ -27,7 +27,7 @@ export default function Home() {
         //take user message and add to conversation history
         setChatLog((prevChatLog) => [...prevChatLog, { type: 'user', message: inputValue }])
         //when user presses send, trigger send message
-        sendMessage(`in terms of accounting: ${inputValue}`);
+        sendMessage(`${inputValue}`);
         //clear out the user input to get ready for new message
         setInputValue('');
     }
