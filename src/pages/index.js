@@ -6,7 +6,7 @@ import Slides from "@/components/Slides";
 const Landing = () => {
 
   return (
-    <div className="bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 w-full h-screen flex flex-col space-y-7 justify-evenly ">
+    <div className="bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 w-full h-screen flex flex-col space-y-7 justify-evenly fixed ">
       <div className="lg:text-8xl text-5xl text-white font-custom p-7  h-[180px] sm:h-[150px] lg:h-[250px]">
         <Typewriter
           options={{
