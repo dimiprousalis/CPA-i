@@ -17,7 +17,7 @@ const Slides = () => {
     return (
         <Swiper className="
         bg-white bg-opacity-40  
-        w-2/3
+        w-3/4
         md:w-[800px]  
         mx-auto 
         shadow-2xl 
@@ -37,7 +37,7 @@ const Slides = () => {
                     flex items-center 
                     text-center 
                     font-custom 
-                    min-h-[250px]
+                    min-h-[220px]
                     sm:leading-7
                     md:text-lg">
                         {swiperTxt1} </div>
@@ -66,7 +66,7 @@ const Slides = () => {
                     flex items-center 
                     text-center 
                     font-custom 
-                    min-h-[250px]
+                    min-h-[220px]
                     sm:leading-7
                     md:text-lg">
                         {swiperTxt2} </div>
@@ -94,7 +94,7 @@ const Slides = () => {
                     flex items-center 
                     text-center 
                     font-custom 
-                    min-h-[250px]
+                    min-h-[220px]
                     sm:leading-7
                     md:text-lg">
                         {swiperTxt3} </div>
