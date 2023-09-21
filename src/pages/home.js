@@ -1,5 +1,3 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import { useState, useEffect } from "react";
@@ -32,7 +30,7 @@ export default function Home() {
         setInputValue('');
     }
 
-    //get data from openAI
+    //send a message to the chatbot using the OpenAI API
     const sendMessage = (message) => {
         const url = '/api/chat';
 
@@ -41,10 +39,10 @@ export default function Home() {
             messages: [{ "role": "user", "content": message }]
         };
 
-        //before we make api call set isloading to true
+        //before making api call set isloading to true
         setIsLoading(true);
 
-        //post request 
+        //send a post request 
         axios.post(url, data).then((response) => {
             console.log(response);
             setChatLog((prevChatLog) => [...prevChatLog, { type: 'bot', message: response.data.choices[0].message.content }])
