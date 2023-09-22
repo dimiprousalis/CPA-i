@@ -2,11 +2,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import accountingpic1 from '../assets/accountingpic1.jpg'
-import accountingpic2 from '../assets/accountingpic2.jpg'
-import accountingpic3 from '../assets/accountingpic3.jpg'
-import Image from 'next/image'
-
 
 const Slides = () => {
 
@@ -41,7 +36,7 @@ const Slides = () => {
                     sm:leading-7
                     md:text-lg">
                         {swiperTxt1} </div>
-                    <Image className="
+                    <img className="
                         w-full 
                         md:w-[500px] 
                         rounded-b-xl 
@@ -50,7 +45,8 @@ const Slides = () => {
                         md:rounded-l-none 
                         rounded-t-none 
                         mx-auto"
-                        src={accountingpic1}
+                        
+                        src="/accountingpic1.jpg"
                         alt="accounting" />
                 </div>
             </SwiperSlide>
@@ -70,7 +66,7 @@ const Slides = () => {
                     sm:leading-7
                     md:text-lg">
                         {swiperTxt2} </div>
-                    <Image className="
+                    <img className="
                         w-full 
                         md:w-[500px] 
                         rounded-b-xl 
@@ -79,7 +75,7 @@ const Slides = () => {
                         md:rounded-l-none 
                         rounded-t-none 
                         mx-auto"
-                        src={accountingpic2}
+                        src="/accountingpic2.jpg"
                         alt="accounting" />
                 </div>
             </SwiperSlide>
@@ -98,7 +94,7 @@ const Slides = () => {
                     sm:leading-7
                     md:text-lg">
                         {swiperTxt3} </div>
-                    <Image className="
+                    <img className="
                         w-full 
                         md:w-[500px] 
                         rounded-b-xl 
@@ -107,7 +103,7 @@ const Slides = () => {
                         md:rounded-l-none 
                         rounded-t-none 
                         mx-auto"
-                        src={accountingpic3}
+                        src="/accountingpic3.jpg"
                         alt="accounting" />
                 </div>
             </SwiperSlide>
